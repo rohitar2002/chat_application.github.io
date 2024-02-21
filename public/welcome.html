@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Room Login</title>
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main class="welcome">
+        <h2>Welcome to my Chat Application</h2>
+
+        <button type="button">Let Started</button>
+    </main>
+
+    <section class="user-entries hide">
+        <div style="display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 200px;
+        justify-content: space-between;">
+            <img src="chat-icon.png" alt="chat-icon">
+            <h2 style="text-align: center;
+            font-size: 30px;
+            width: 150px;">Chat App</h2>
+        </div>
+
+        <div class="input">
+            <h3>Username</h3>
+            <input type="text" name="" id="name" placeholder="Enter Your Name: ">
+        </div>
+
+        <button style="width: 160px;
+        height: 55px;
+        font-size: 23px;
+        background-color: mediumturquoise;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        bottom: 90px;" type="button">Join Room</button>
+    </section>
+
+    <section class="warning hide">
+        <div style="width: 100%;
+        align-items: center;
+        height: 22%;
+        justify-content: space-between;
+        font-size: 15px;
+        border-bottom: 2px solid black;
+        padding: 0px 10px 0px 10px;">
+            <h2>Warning</h2>
+
+            <img src="close.png" alt="close-icon" class="close-wrn" style="width: 30px;
+            height: 30px;
+            cursor: pointer;">
+        </div>
+        <div style="margin: 10px 0px 25px 0px ">
+            <img src="alert.png" alt="warn-icon" style="width: 40px;">
+            <h3>Please provide the valid input!</h3>
+        </div>
+
+        <button type="button" style="height: 40px;
+        width: 120px; background-color: lightgray;
+    border: 2px solid black;" class="close-wrn">OK</button>
+
+    <audio src="error_sound.mp3" id="err_sound"></audio>
+    </section>
+
+    <section id="chat-page">
+        <audio src="Notification_msg_sound.mp3"></audio>
+        <h2 style="font-size: 30px;
+        margin-top: 0px;
+        margin-left: 20px;
+        color: dodgerblue; justify-self: flex-start;">Chat App</h2>
+        <div class="messages"></div>
+
+        <div class="input">
+            <input type="text" name="" id="inp_msg" placeholder="Enter Your message:">
+            <button type="button" id="send-message">Send</button>
+        </div>
+    </section>
+
+    <script src="socket.io.js"></script>
+    <script src="index.js"></script>
+
+</body>
+
+</html>

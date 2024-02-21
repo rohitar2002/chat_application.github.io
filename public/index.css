@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    background-color: lightpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 655px;
+    height: 215px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main h2 {
+    font-size: 45px;
+    color: magenta;
+}
+
+button {
+    width: 160px;
+    height: 55px;
+    font-size: 23px;
+    background-color: mediumturquoise;
+    border: none;
+    cursor: pointer;
+}
+
+.user-entries {
+    height: 80%;
+    width: 45%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    background: aliceblue;
+}
+
+.user-entries div img {
+    width: 85px;
+}
+
+.user-entries .input {
+    display: flex;
+    height: 19%;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 24px;
+    width: 70%;
+    position: relative;
+    bottom: 52px;
+}
+
+#name {
+    height: 45px;
+    font-size: 17px;
+    padding-left: 10px;
+}
+
+#chat-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    padding: 10px;
+}
+
+
+#chat-page .input button {
+    width: 90px;
+    height: 40px;
+    font-size: 23px;
+    background-color: mediumturquoise;
+    border: none;
+    cursor: pointer;
+}
+
+#chat-page .input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#inp_msg {
+    width: 92%;
+    height: 35px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+#chat-page .messages {
+    display: flex;
+    flex-direction: column; 
+    /* justify-content: space-between; */
+    height: 80%;
+    border: 2px solid black;
+    overflow: auto;
+}
+
+#chat-page {
+    display: none;
+}
+
+.warning{
+    border: 2px solid black;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    height: 180px;
+    position: absolute;
+    top: 230px;
+    background-color: lightgray;
+}
+
+.warning div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    font-size: 23px;
+}
+
+.hide {
+    display: none;
+}
