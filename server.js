@@ -26,7 +26,7 @@ app.use(express.static("./public"));
 app.get("/", (req, res)=>{
     console.log(req.url);
 
-    res.sendFile("C:\\Rohit\\chat_application\\public\\welcome.html");
+    res.sendFile("C:\\Rohit\\chat_application\\public\\index.html");
 })
 
 
