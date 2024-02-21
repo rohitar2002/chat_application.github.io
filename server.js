@@ -21,7 +21,7 @@ io.on("connection", (socket)=>{
     })
 })
 
-app.use(express.static("./public"));
+app.use(express.static("https://github.com/rohitar2002/chat_application.github.io/tree/main/public"));
 
 app.get("/", (req, res)=>{
     console.log(req.url);
